@@ -1,0 +1,14 @@
+{
+  "status": {
+    "code": "000000",
+    "description": "Success"
+  },
+  "data": {
+    "failLoginCount": 1,
+    "activeLoginMB": 0,
+    "successLoginCount": 2,
+    "activeLoginIB": 0,
+    "failedPercentage": 50.0,
+    "successPercentage": 100.0
+  }
+}

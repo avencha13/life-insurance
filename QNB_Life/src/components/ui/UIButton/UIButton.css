@@ -1,0 +1,53 @@
+.ui-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--qnb-space-8);
+  min-height: 40px;
+  padding: 0 var(--qnb-space-20);
+  border-radius: var(--qnb-radius);
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-weight: var(--qnb-fw-semi);
+  font-size: var(--qnb-fs-14);
+  transition: background 0.15s ease, opacity 0.15s ease;
+}
+
+.ui-button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.ui-button-primary {
+  background: var(--qnb-primary);
+  color: var(--qnb-on-primary);
+}
+
+.ui-button-primary:hover:not(:disabled) {
+  background: var(--qnb-blue-b9c);
+}
+
+.ui-button-outline {
+  background: var(--qnb-surface);
+  color: var(--qnb-primary);
+  border-color: var(--qnb-primary);
+}
+
+.ui-button-ghost {
+  background: transparent;
+  color: var(--qnb-on-surface);
+  border-color: var(--qnb-border);
+}
+
+.ui-button-danger {
+  background: var(--qnb-error);
+  color: var(--qnb-on-error);
+}
+
+.ui-button-icon {
+  min-height: 36px;
+  width: 36px;
+  padding: 0;
+  background: var(--qnb-secondary);
+  color: var(--qnb-on-surface);
+}

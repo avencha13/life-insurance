@@ -1,0 +1,6 @@
+.ui-card {
+  background: var(--qnb-card-bg);
+  border: 1px solid var(--qnb-border);
+  border-radius: var(--qnb-radius-lg);
+  padding: var(--qnb-space-24);
+}

@@ -1,0 +1,135 @@
+/* Ported from Flutter DefaultColors + DefaultColorScheme.light */
+:root {
+  --qnb-white: #ffffff;
+  --qnb-white-fa: #fafafa;
+  --qnb-black: #000000;
+  --qnb-black-4e: #2f394e;
+  --qnb-black-32: #292d32;
+
+  --qnb-gray-ca: #cacaca;
+  --qnb-gray-f8: #f8f8f8;
+  --qnb-gray-f4: #f1f2f4;
+  --qnb-gray-e6: #e6e6e6;
+  --qnb-gray-e5: #e5e5e5;
+  --qnb-gray-e4: #e4e4e4;
+  --qnb-gray-fb: #fbfbfb;
+  --qnb-gray-82: #828282;
+  --qnb-gray-8a: #8a8a8a;
+  --qnb-gray-62: #626262;
+  --qnb-gray-53: #535353;
+  --qnb-gray-54: #565454;
+  --qnb-gray-2d: #2f2d2d;
+
+  --qnb-blue-9c: #01559c;
+  --qnb-blue-b9c: #0b4b9c;
+  --qnb-blue-98: #113e98;
+  --qnb-blue-88: #0d2b88;
+  --qnb-blue-59: #2e3a59;
+  --qnb-blue-a0: #035aa0;
+  --qnb-blue-brand: #075ef5;
+  --qnb-blue-muted: #58627e;
+  --qnb-blue-divider: #9aa4ba;
+  --qnb-blue-text: #313d4f;
+
+  --qnb-orange-14: #ffa814;
+  --qnb-green-89: #00b189;
+  --qnb-red-64: #ff9364;
+  --qnb-red: #e30808;
+  --qnb-green-increased: #0b8149;
+  --qnb-red-decreased: #cc0000;
+  --qnb-green-bar: #7ed321;
+  --qnb-blue-bar: #344bfd;
+  --qnb-orange-bar: #f68d2b;
+  --qnb-red-bar: #ff0000;
+  --qnb-deep-pink: #c40e6b;
+  --qnb-add-product-green: #1c8759;
+  --qnb-active-customer-light: #d0d2e0;
+  --qnb-active-customer-dark: #5c5e64;
+
+  /* AppColorScheme.light mapping */
+  --qnb-primary: var(--qnb-blue-9c);
+  --qnb-on-primary: var(--qnb-white);
+  --qnb-primary-container: var(--qnb-white);
+  --qnb-secondary: var(--qnb-gray-f8);
+  --qnb-on-secondary: var(--qnb-gray-8a);
+  --qnb-background: var(--qnb-white-fa);
+  --qnb-on-background: var(--qnb-gray-2d);
+  --qnb-surface: var(--qnb-white-fa);
+  --qnb-on-surface: var(--qnb-gray-2d);
+  --qnb-error: var(--qnb-red);
+  --qnb-on-error: var(--qnb-white);
+  --qnb-scaffold: var(--qnb-gray-f4);
+  --qnb-dashboard-surface: #ffffff;
+  --qnb-dashboard-text: #131720;
+  --qnb-dashboard-muted: #6b7280;
+  --qnb-dashboard-tab-active-bg: #f6f7f9;
+  --qnb-dashboard-tab-active-text: #131720;
+  --qnb-dashboard-tab-idle: #6b7280;
+  --qnb-dashboard-border: #e5e7eb;
+
+  /* User Count cards — Flutter row1.dart */
+  --qnb-uc-mb-bg: #fff7ed;
+  --qnb-uc-mb-icon: #f59e0b;
+  --qnb-uc-ib-bg: #f0f9ff;
+  --qnb-uc-ib-icon: #3b82f6;
+  --qnb-uc-mb2-bg: #f0fdf4;
+  --qnb-uc-mb2-icon: #10b981;
+  --qnb-uc-ib2-bg: #faf5ff;
+  --qnb-uc-ib2-icon: #8b5cf6;
+  --qnb-uc-value: #111827;
+  --qnb-uc-label: #6b7280;
+  --qnb-uc-up: #10b981;
+  --qnb-uc-down: #ef4444;
+
+  /* KPI metric cards — Flutter row2_metrics.dart */
+  --qnb-kpi-icon-bg: #eff3ff;
+  --qnb-kpi-icon: #0d59f2;
+  --qnb-kpi-pill-bg: #dff8e9;
+  --qnb-kpi-pill-text: #0e9f6e;
+  --qnb-kpi-text: #131720;
+
+  /* Charts — Flutter Material blue / pink */
+  --qnb-chart-ib: #2196f3;
+  --qnb-chart-mb: #e91e63;
+
+  --qnb-sidebar-bg: #0f172a;
+  --qnb-sidebar-border: rgb(148 163 184 / 12%);
+  --qnb-sidebar-active: #3b82f6;
+  --qnb-sidebar-hover: rgb(148 163 184 / 12%);
+  --qnb-sidebar-text: #e2e8f0;
+  --qnb-sidebar-muted: #94a3b8;
+  --qnb-sidebar-section: #64748b;
+  --qnb-topbar-bg: var(--qnb-white);
+  --qnb-card-bg: var(--qnb-white);
+  --qnb-border: var(--qnb-gray-e4);
+  --qnb-muted: var(--qnb-gray-82);
+  --qnb-input-bg: var(--qnb-white);
+  --qnb-input-border: var(--qnb-gray-ca);
+  --qnb-table-header: var(--qnb-gray-f8);
+  --qnb-success: var(--qnb-green-89);
+  --qnb-warning: var(--qnb-orange-14);
+  --qnb-metric-orange: #f59e0b;
+  --qnb-metric-blue: #3b82f6;
+  --qnb-metric-green: #10b981;
+  --qnb-metric-purple: #8b5cf6;
+
+  /* Login page — from Flutter login_page / login_form */
+  --qnb-login-navy: #102457;
+  --qnb-login-accent: #075ef5;
+  --qnb-login-btn: #256af4;
+  --qnb-login-btn-disabled: #e5e7eb;
+  --qnb-login-muted: #58627e;
+  --qnb-login-label: #131720;
+  --qnb-login-input-text: #1f2937;
+  --qnb-login-input-bg: #f9fafb;
+  --qnb-login-border: #e5e7eb;
+  --qnb-login-hint: #9ca3af;
+  --qnb-login-card-border: #e1e7f0;
+  --qnb-login-hero-wash: #f5f9ff;
+  --qnb-login-divider: #9aa4ba;
+  --qnb-login-error: #ef4444;
+  --qnb-login-grad-1: #075ef5;
+  --qnb-login-grad-2: #20a7e4;
+  --qnb-login-grad-3: #a5d867;
+  --qnb-login-shadow: rgb(16 36 87 / 5%);
+}

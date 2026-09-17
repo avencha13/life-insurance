@@ -1,0 +1,40 @@
+{
+  "status": {
+    "code": "000000",
+    "description": "SUCCESS"
+  },
+  "data": {
+    "updatedAppCount": "20",
+    "financialCountNewApp": "23",
+    "financialTxnAmt": "24",
+    "nonFinancialCount": "43",
+    "financial": [
+      {
+        "countryCode": "PRD",
+        "countryName": "Qatar",
+        "successCount": "1",
+        "failedCount": "3"
+      },
+      {
+        "countryCode": "IND",
+        "countryName": "IND",
+        "successCount": "0",
+        "failedCount": "0"
+      }
+    ],
+    "nonFinancial": [
+      {
+        "countryCode": "PRD",
+        "countryName": "Qatar",
+        "successCount": "0",
+        "failedCount": "0"
+      },
+      {
+        "countryCode": "IND",
+        "countryName": "IND",
+        "successCount": "0",
+        "failedCount": "0"
+      }
+    ]
+  }
+}

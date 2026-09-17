@@ -1,0 +1,313 @@
+/* Flutter UiSliderMenu visual + scroll parity */
+.side-menu {
+  --sm-bg: #1a202c;
+  --sm-text: #e2e8f0;
+  --sm-muted: #94a3b8;
+  --sm-section: #64748b;
+  --sm-hover: rgb(148 163 184 / 12%);
+  --sm-active-bg: rgb(59 130 246 / 18%);
+  --sm-active-bar: #3b82f6;
+  --sm-border: rgb(148 163 184 / 12%);
+  /* Flutter _footerReservedHeight: 156 open / 96 compact */
+  --sm-footer-reserve: 156px;
+  --sm-scrollbar-thumb: #9ca3af;
+
+  width: var(--qnb-sidebar-width);
+  flex: 0 0 var(--qnb-sidebar-width);
+  height: 100%;
+  min-height: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--sm-bg);
+  border-right: 1px solid var(--sm-border);
+  color: var(--sm-text);
+}
+
+.side-menu.is-collapsed {
+  width: var(--qnb-sidebar-collapsed);
+  flex-basis: var(--qnb-sidebar-collapsed);
+  --sm-footer-reserve: 96px;
+}
+
+.side-menu-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px;
+  border-bottom: 1px solid var(--sm-border);
+  min-height: 64px;
+  flex-shrink: 0;
+}
+
+.side-menu-logo {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.side-menu-brand-text {
+  flex: 1;
+  color: #ffffff;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.side-menu-search {
+  border: none;
+  background: transparent;
+  padding: 4px;
+  cursor: pointer;
+  color: var(--sm-muted);
+  font-size: 16px;
+  line-height: 1;
+}
+
+/* Only the menu list scrolls — Flutter Expanded + ListView */
+.side-menu-nav {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  overscroll-behavior: contain;
+  display: flex;
+  flex-direction: column;
+  padding: 12px 10px;
+  /* Flutter ListView bottom: footerReservedHeight + 10 (footer overlays) */
+  padding-bottom: calc(var(--sm-footer-reserve) + 10px);
+  gap: 2px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--sm-scrollbar-thumb) transparent;
+}
+
+.side-menu-nav::-webkit-scrollbar {
+  width: 6px;
+}
+
+.side-menu-nav::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 8px;
+}
+
+.side-menu-nav::-webkit-scrollbar-thumb {
+  background: var(--sm-scrollbar-thumb);
+  border-radius: 8px;
+}
+
+.side-menu-status {
+  color: var(--sm-muted);
+  padding: 8px;
+}
+
+.side-menu-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.side-menu-section-label {
+  margin: 14px 0 6px;
+  padding: 0 12px;
+  color: var(--sm-section);
+  letter-spacing: 0.08em;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.side-menu-product,
+.side-menu-sub,
+.side-menu-child {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  border: none;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 8px;
+  color: var(--sm-text);
+  text-decoration: none;
+  position: relative;
+}
+
+.side-menu-product {
+  padding: 10px 12px;
+}
+
+.side-menu-product:hover,
+.side-menu-sub:hover,
+.side-menu-child:hover {
+  background: var(--sm-hover);
+}
+
+.side-menu-product.is-active,
+.side-menu-sub.is-active,
+.side-menu-child.is-active {
+  background: var(--sm-active-bg);
+  color: #ffffff;
+}
+
+.side-menu-product.is-active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  bottom: 8px;
+  width: 3px;
+  border-radius: 0 2px 2px 0;
+  background: var(--sm-active-bar);
+}
+
+.side-menu-label {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: inherit;
+  font-weight: 500;
+}
+
+.side-menu-icon {
+  flex-shrink: 0;
+  /* Lucide stroke SVGs → slate like Flutter Color(0xFF94A3B8) */
+  filter: brightness(0) saturate(100%) invert(71%) sepia(10%) saturate(463%)
+    hue-rotate(176deg) brightness(92%) contrast(87%);
+}
+
+.side-menu-icon.is-active,
+.side-menu-product.is-active .side-menu-icon,
+.side-menu-sub.is-active .side-menu-icon {
+  filter: brightness(0) invert(1);
+}
+
+.side-menu-chevron-icon {
+  flex-shrink: 0;
+  opacity: 0.7;
+  filter: brightness(0) saturate(100%) invert(71%) sepia(10%) saturate(463%)
+    hue-rotate(176deg) brightness(92%) contrast(87%);
+}
+
+.side-menu-subs {
+  display: flex;
+  flex-direction: column;
+  padding-left: 8px;
+  gap: 2px;
+  margin-bottom: 4px;
+}
+
+.side-menu-sub {
+  padding: 8px 12px 8px 28px;
+  color: var(--sm-muted);
+}
+
+.side-menu-sub.is-active {
+  color: #ffffff;
+}
+
+.side-menu-children {
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px;
+  gap: 2px;
+}
+
+.side-menu-child {
+  padding: 8px 12px 8px 40px;
+  color: var(--sm-muted);
+}
+
+/* Pinned footer overlay — Flutter Align(bottomCenter) + Material elevation 6 */
+.side-menu-footer {
+  flex-shrink: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-top: 1px solid var(--sm-border);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: var(--sm-bg);
+  box-shadow: 0 -4px 12px rgb(0 0 0 / 28%);
+  z-index: 2;
+}
+
+.side-menu-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.side-menu-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: var(--sm-active-bar);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.side-menu-user-text {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-menu-user-id {
+  color: #ffffff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.side-menu-user-name {
+  color: var(--sm-muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.side-menu-logout,
+.side-menu-collapse {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  background: transparent;
+  color: var(--sm-text);
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.side-menu-logout:hover,
+.side-menu-collapse:hover {
+  background: var(--sm-hover);
+}
+
+.side-menu-collapse {
+  width: 100%;
+  justify-content: flex-start;
+  color: var(--sm-muted);
+}
+
+.side-menu.is-collapsed .side-menu-product,
+.side-menu.is-collapsed .side-menu-logout,
+.side-menu.is-collapsed .side-menu-collapse {
+  justify-content: center;
+  padding-inline: 8px;
+}
+
+.side-menu.is-collapsed .side-menu-brand {
+  justify-content: center;
+}

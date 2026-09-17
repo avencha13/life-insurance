@@ -1,0 +1,12 @@
+{
+  "status": {
+    "code": "000000",
+    "description": "SUCCESS"
+  },
+  "data": {
+    "registeredCount" : "20",
+    "startedCount" : "15",
+    "brokenCount" : "32",
+    "completedCount" : "50"
+  }
+}
