@@ -1,0 +1,10 @@
+{
+  "status": {
+    "code": "000000",
+    "description": "SUCCESS"
+  },
+  "data": {
+    "kycCount" : "1000"
+
+  }
+}

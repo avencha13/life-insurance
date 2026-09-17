@@ -1,0 +1,17 @@
+.city-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--qnb-space-16);
+}
+
+.city-page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--qnb-space-16);
+}
+
+.city-page-error {
+  color: var(--qnb-error);
+  margin-bottom: var(--qnb-space-12);
+}

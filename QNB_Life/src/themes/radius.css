@@ -1,0 +1,7 @@
+:root {
+  --qnb-radius-sm: 4px;
+  --qnb-radius: 8px;
+  --qnb-radius-md: 10px;
+  --qnb-radius-lg: 12px;
+  --qnb-radius-pill: 999px;
+}

@@ -1,0 +1,334 @@
+{
+  "status": {
+    "code": "000000",
+    "description": "SUCCESS"
+  },
+  "data": [
+    {
+      "productCode": "USER_CREATION",
+      "productDesc": "User Creation",
+      "subProducts": [
+        {
+          "subProductCode": "USER_MANAGEMENT",
+          "subProductDesc": "User Management",
+          "subProductUrl": "/user-management",
+          "functions": [
+            {
+              "functionCode": "MODIFY",
+              "functionDesc": "Modify"
+            },
+            {
+              "functionCode": "AUTH",
+              "functionDesc": "Authorization"
+            },
+            {
+              "functionCode": "DELETE",
+              "functionDesc": "Delete"
+            },
+            {
+              "functionCode": "ADD",
+              "functionDesc": "Add"
+            },
+            {
+              "functionCode": "SUMMARY",
+              "functionDesc": "Summary"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "productCode": "MENU_ACCESS_CONTROL",
+      "productDesc": "User Access Control",
+      "subProducts": [
+        {
+          "subProductCode": "GROUP_MANAGEMENT",
+          "subProductDesc": "Group Management",
+          "subProductUrl": "/group-management",
+          "functions": [
+            {
+              "functionCode": "MODIFY",
+              "functionDesc": "Modify"
+            },
+            {
+              "functionCode": "SUMMARY",
+              "functionDesc": "Summary"
+            },
+            {
+              "functionCode": "ADD",
+              "functionDesc": "Add"
+            },
+            {
+              "functionCode": "DELETE",
+              "functionDesc": "Delete"
+            },
+            {
+              "functionCode": "AUTH",
+              "functionDesc": "Authorization"
+            }
+          ]
+        },
+        {
+          "subProductCode": "ROLE_MANAGEMENT",
+          "subProductDesc": "Role Management",
+          "subProductUrl": "/role-management",
+          "functions": [
+            {
+              "functionCode": "DELETE",
+              "functionDesc": "Delete"
+            },
+            {
+              "functionCode": "MODIFY",
+              "functionDesc": "Modify"
+            },
+            {
+              "functionCode": "AUTH",
+              "functionDesc": "Authorization"
+            },
+            {
+              "functionCode": "ADD",
+              "functionDesc": "Add"
+            },
+            {
+              "functionCode": "SUMMARY",
+              "functionDesc": "Summary"
+            }
+          ]
+        },
+        {
+          "subProductCode": "RULE_MANAGEMENT",
+          "subProductDesc": "Rule Management",
+          "subProductUrl": "/rule-management",
+          "functions": [
+            {
+              "functionCode": "MODIFY",
+              "functionDesc": "Modify"
+            },
+            {
+              "functionCode": "SUMMARY",
+              "functionDesc": "Summary"
+            },
+            {
+              "functionCode": "ADD",
+              "functionDesc": "Add"
+            },
+            {
+              "functionCode": "DELETE",
+              "functionDesc": "Delete"
+            },
+            {
+              "functionCode": "AUTH",
+              "functionDesc": "Authorization"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "productCode": "COUNTY_SETTINGS",
+      "productDesc": "Country Settings",
+      "subProducts": [
+        {
+          "subProductCode": "LANG_MANAGEMENT",
+          "subProductDesc": "Language Management",
+          "subProductUrl": "/languageManagement",
+          "functions": [
+            {
+              "functionCode": "DELETE",
+              "functionDesc": "Delete"
+            },
+            {
+              "functionCode": "MODIFY",
+              "functionDesc": "Modify"
+            },
+            {
+              "functionCode": "SUMMARY",
+              "functionDesc": "Summary"
+            },
+            {
+              "functionCode": "ADD",
+              "functionDesc": "Add"
+            },
+            {
+              "functionCode": "AUTH",
+              "functionDesc": "Authorization"
+            }
+          ]
+        },
+        {
+          "subProductCode": "UNIT_MANAGEMENT",
+          "subProductDesc": "Country Management",
+          "subProductUrl": "/unitManagement",
+          "functions": [
+            {
+              "functionCode": "AUTH",
+              "functionDesc": "Authorization"
+            },
+            {
+              "functionCode": "DELETE",
+              "functionDesc": "Delete"
+            },
+            {
+              "functionCode": "MODIFY",
+              "functionDesc": "Modify"
+            },
+            {
+              "functionCode": "SUMMARY",
+              "functionDesc": "Summary"
+            },
+            {
+              "functionCode": "ADD",
+              "functionDesc": "Add"
+            }
+          ]
+        },
+        {
+          "subProductCode": "UNIT_LANG_MANAGEMENT",
+          "subProductDesc": "Country and Language Management",
+          "subProductUrl": "/unitLangManagement",
+          "functions": [
+            {
+              "functionCode": "ADD",
+              "functionDesc": "Add"
+            },
+            {
+              "functionCode": "DELETE",
+              "functionDesc": "Delete"
+            },
+            {
+              "functionCode": "SUMMARY",
+              "functionDesc": "Summary"
+            },
+            {
+              "functionCode": "AUTH",
+              "functionDesc": "Authorization"
+            },
+            {
+              "functionCode": "MODIFY",
+              "functionDesc": "Modify"
+            }
+          ]
+        },
+        {
+          "subProductCode": "CHANNEL_MANAGEMENT",
+          "subProductDesc": "Channel Management",
+          "subProductUrl": "/channelManagement",
+          "functions": [
+            {
+              "functionCode": "ADD",
+              "functionDesc": "Add"
+            },
+            {
+              "functionCode": "MODIFY",
+              "functionDesc": "Modify"
+            },
+            {
+              "functionCode": "SUMMARY",
+              "functionDesc": "Summary"
+            },
+            {
+              "functionCode": "DELETE",
+              "functionDesc": "Delete"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "productCode": "MENU_MAINT",
+      "productDesc": "Menu Maintanance",
+      "subProducts": [
+        {
+          "subProductCode": "MENU_MANAGEMENT",
+          "subProductDesc": "Menu Management",
+          "subProductUrl": "/menu-management",
+          "functions": [
+            {
+              "functionCode": "ADD",
+              "functionDesc": "Add"
+            },
+            {
+              "functionCode": "AUTH",
+              "functionDesc": "Authorization"
+            },
+            {
+              "functionCode": "SUMMARY",
+              "functionDesc": "Summary"
+            },
+            {
+              "functionCode": "MODIFY",
+              "functionDesc": "Modify"
+            },
+            {
+              "functionCode": "DELETE",
+              "functionDesc": "Delete"
+            }
+          ]
+        },
+        {
+          "subProductCode": "SUBMENU_MANAGEMENT",
+          "subProductDesc": "Sub-Menu Management",
+          "subProductUrl": "/sub-menu",
+          "functions": [
+            {
+              "functionCode": "AUTH",
+              "functionDesc": "Authorization"
+            },
+            {
+              "functionCode": "SUMMARY",
+              "functionDesc": "Summary"
+            },
+            {
+              "functionCode": "MODIFY",
+              "functionDesc": "Modify"
+            },
+            {
+              "functionCode": "DELETE",
+              "functionDesc": "Delete"
+            },
+            {
+              "functionCode": "ADD",
+              "functionDesc": "Add"
+            }
+          ]
+        },
+        {
+          "subProductCode": "MENU_ENTITLEMENT",
+          "subProductDesc": "Menu Entitlement",
+          "subProductUrl": "/menu-entitlement",
+          "functions": [
+            {
+              "functionCode": "MODIFY",
+              "functionDesc": "Modify"
+            },
+            {
+              "functionCode": "AUTH",
+              "functionDesc": "Authorization"
+            },
+            {
+              "functionCode": "SUMMARY",
+              "functionDesc": "Summary"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "productCode": "I18N_MAINT",
+      "productDesc": "i18n Maintenance",
+      "subProducts": [
+        {
+          "subProductCode": "I18N_MANAGEMENT",
+          "subProductDesc": "i18n Management",
+          "subProductUrl": "/i18n-management",
+          "functions": [
+            {
+              "functionCode": "ADD",
+              "functionDesc": "Add"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

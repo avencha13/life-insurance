@@ -1,0 +1,22 @@
+:root {
+  --qnb-space-4: 4px;
+  --qnb-space-8: 8px;
+  --qnb-space-12: 12px;
+  --qnb-space-16: 16px;
+  --qnb-space-20: 20px;
+  --qnb-space-22: 22px;
+  --qnb-space-24: 24px;
+  --qnb-space-32: 32px;
+  --qnb-space-40: 40px;
+  --qnb-space-56: 56px;
+  --qnb-space-64: 64px;
+
+  --qnb-sidebar-width: 280px;
+  --qnb-sidebar-collapsed: 72px;
+  --qnb-topbar-height: 64px;
+  --qnb-login-form-max: 430px;
+  --qnb-login-btn-height: 56px;
+  --qnb-login-input-height: 44px;
+  --qnb-login-grad-bar-w: 92px;
+  --qnb-login-grad-bar-h: 5px;
+}

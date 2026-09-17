@@ -1,0 +1,26 @@
+.ui-text {
+  margin: 0;
+  font-family: var(--qnb-font-family);
+  color: var(--qnb-on-surface);
+  letter-spacing: 0;
+  word-break: break-word;
+}
+
+.ui-text-h45 { font-size: var(--qnb-fs-45); }
+.ui-text-h35 { font-size: var(--qnb-fs-35); }
+.ui-text-h31 { font-size: var(--qnb-fs-31); }
+.ui-text-h28 { font-size: var(--qnb-fs-28); }
+.ui-text-h24 { font-size: var(--qnb-fs-24); }
+.ui-text-h20 { font-size: var(--qnb-fs-20); }
+.ui-text-h18 { font-size: var(--qnb-fs-18); }
+.ui-text-h16 { font-size: var(--qnb-fs-16); }
+.ui-text-h15 { font-size: var(--qnb-fs-15); }
+.ui-text-h14 { font-size: var(--qnb-fs-14); }
+.ui-text-h13 { font-size: var(--qnb-fs-13); }
+.ui-text-h12 { font-size: var(--qnb-fs-12); }
+
+.ui-text-regular { font-weight: var(--qnb-fw-regular); }
+.ui-text-medium { font-weight: var(--qnb-fw-medium); }
+.ui-text-semi { font-weight: var(--qnb-fw-semi); }
+.ui-text-bold { font-weight: var(--qnb-fw-bold); }
+.ui-text-extra { font-weight: var(--qnb-fw-extra); }

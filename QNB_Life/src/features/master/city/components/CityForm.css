@@ -1,0 +1,19 @@
+.city-form-panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--qnb-space-20);
+  height: 100%;
+}
+
+.city-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--qnb-space-16);
+}
+
+.city-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--qnb-space-12);
+  margin-top: var(--qnb-space-12);
+}

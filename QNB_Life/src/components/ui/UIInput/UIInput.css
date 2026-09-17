@@ -1,0 +1,109 @@
+.ui-input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.ui-input-label {
+  color: #334155;
+  font-size: 13px;
+}
+
+.ui-input-control-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.ui-input-control {
+  width: 100%;
+  height: 44px;
+  padding: 0 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #212529;
+  font-size: 14px;
+  font-weight: 400;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.ui-input-control::placeholder {
+  color: #94a3b8;
+}
+
+.ui-input-control:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgb(37 99 235 / 18%);
+}
+
+.ui-input-control-wrap.has-error .ui-input-control {
+  border-color: #ef4444;
+}
+
+.ui-input-control-wrap.has-error .ui-input-control:focus {
+  box-shadow: 0 0 0 3px rgb(239 68 68 / 16%);
+}
+
+.ui-input-control-wrap.is-readonly .ui-input-control,
+.ui-input-control-wrap.is-disabled .ui-input-control,
+.ui-input-control:disabled,
+.ui-input-control:read-only {
+  background: #f8fafc;
+  color: #475569;
+  cursor: default;
+}
+
+.ui-input-control:disabled {
+  opacity: 0.85;
+  cursor: not-allowed;
+}
+
+.ui-input-control-wrap.has-left .ui-input-control {
+  padding-left: 42px;
+}
+
+.ui-input-control-wrap.has-right .ui-input-control {
+  padding-right: 42px;
+}
+
+.ui-input-adornment {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #94a3b8;
+  pointer-events: none;
+}
+
+.ui-input-adornment-left {
+  left: 14px;
+}
+
+.ui-input-adornment-right {
+  right: 12px;
+  pointer-events: auto;
+}
+
+.ui-input-adornment-right button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  color: #94a3b8;
+}
+
+.ui-input-error {
+  color: #ef4444;
+  padding-left: 4px;
+  margin-top: 2px;
+}
+
+.ui-input-field.is-disabled .ui-input-label {
+  color: #94a3b8;
+}

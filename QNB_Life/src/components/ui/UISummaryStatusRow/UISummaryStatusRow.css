@@ -1,0 +1,50 @@
+.ui-summary-status-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.ui-summary-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 34px;
+  padding: 0 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #475569;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.ui-summary-chip:hover {
+  border-color: #0051d7;
+  color: #0051d7;
+}
+
+.ui-summary-chip.is-active {
+  background: #eff6ff;
+  border-color: #0051d7;
+  color: #0051d7;
+}
+
+.ui-summary-chip-count {
+  min-width: 22px;
+  height: 22px;
+  padding: 0 6px;
+  border-radius: 999px;
+  background: #f1f5f9;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.ui-summary-chip.is-active .ui-summary-chip-count {
+  background: #0051d7;
+  color: #ffffff;
+}

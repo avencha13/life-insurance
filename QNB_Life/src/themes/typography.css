@@ -1,0 +1,33 @@
+/* Ported from Flutter UiTextNew size/weight scale (subset used by BO) */
+:root {
+  --qnb-font-family: Roboto, Inter, ui-sans-serif, system-ui, sans-serif;
+
+  --qnb-fs-10: 10px;
+  --qnb-fs-12: 12px;
+  --qnb-fs-13: 13px;
+  --qnb-fs-14: 14px;
+  --qnb-fs-15: 15px;
+  --qnb-fs-16: 16px;
+  --qnb-fs-17: 17px;
+  --qnb-fs-18: 18px;
+  --qnb-fs-20: 20px;
+  --qnb-fs-22: 22px;
+  --qnb-fs-24: 24px;
+  --qnb-fs-25: 25px;
+  --qnb-fs-27: 27px;
+  --qnb-fs-28: 28px;
+  --qnb-fs-31: 31px;
+  --qnb-fs-35: 35px;
+  --qnb-fs-37: 37px;
+  --qnb-fs-45: 45px;
+  --qnb-fs-login-hero: 42px;
+  --qnb-fs-login-hero-sm: 34px;
+  --qnb-fs-login-desc: 17px;
+  --qnb-fs-login-desc-sm: 15px;
+
+  --qnb-fw-regular: 400;
+  --qnb-fw-medium: 500;
+  --qnb-fw-semi: 600;
+  --qnb-fw-bold: 700;
+  --qnb-fw-extra: 800;
+}

@@ -1,0 +1,22 @@
+.coming-soon-page {
+  display: flex;
+  justify-content: center;
+  padding-top: var(--qnb-space-40);
+}
+
+.coming-soon-card {
+  width: min(560px, 100%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--qnb-space-12);
+}
+
+.coming-soon-message {
+  color: var(--qnb-muted);
+}
+
+.coming-soon-path {
+  color: var(--qnb-primary);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
